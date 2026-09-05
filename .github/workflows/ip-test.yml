@@ -14,4 +14,4 @@ jobs:
         run: pip install requests
 
       - name: Ejecutar script
-        run: python script.py
+        run: python votar.py --cantidad 10 --retraso 5
