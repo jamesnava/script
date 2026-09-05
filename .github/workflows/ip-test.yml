@@ -1,0 +1,17 @@
+name: Test IP Rotation
+
+on:
+  workflow_dispatch:
+
+jobs:
+  check-ip:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Instalar dependencias
+        run: pip install requests
+
+      - name: Ejecutar script
+        run: python script.py
